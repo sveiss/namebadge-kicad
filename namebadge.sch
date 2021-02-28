@@ -189,17 +189,6 @@ $EndComp
 Wire Wire Line
 	5850 1050 5850 1150
 $Comp
-L Device:C C15
-U 1 1 6068DE58
-P 6000 1850
-F 0 "C15" V 5748 1850 50  0000 C CNN
-F 1 "1000uF" V 5839 1850 50  0000 C CNN
-F 2 "Capacitor_THT:C_Radial_D12.5mm_H20.0mm_P5.00mm" H 6038 1700 50  0001 C CNN
-F 3 "~" H 6000 1850 50  0001 C CNN
-	1    6000 1850
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR0111
 U 1 1 6068F796
 P 6150 1950
@@ -282,7 +271,7 @@ $EndComp
 Wire Wire Line
 	5400 2450 5400 2300
 Wire Wire Line
-	5400 2300 5850 2300
+	5400 2300 5500 2300
 Connection ~ 5850 2300
 Wire Wire Line
 	5650 3550 5650 2650
@@ -346,4 +335,32 @@ Wire Wire Line
 Wire Wire Line
 	3050 3550 5650 3550
 NoConn ~ 2800 3550
+$Comp
+L Device:CP_Small C16
+U 1 1 60764BC0
+P 5500 2400
+F 0 "C16" H 5588 2446 50  0000 L CNN
+F 1 "0.1uF" H 5588 2355 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 5500 2400 50  0001 C CNN
+F 3 "~" H 5500 2400 50  0001 C CNN
+	1    5500 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 5500 2300
+Wire Wire Line
+	5500 2300 5850 2300
+Wire Wire Line
+	5500 2500 5500 2550
+Connection ~ 5500 2550
+$Comp
+L Device:CP C15
+U 1 1 6068DE58
+P 6000 1850
+F 0 "C15" V 6255 1850 50  0000 C CNN
+F 1 "1000uF" V 6164 1850 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 6038 1700 50  0001 C CNN
+F 3 "~" H 6000 1850 50  0001 C CNN
+	1    6000 1850
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
