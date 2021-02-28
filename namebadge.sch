@@ -183,16 +183,14 @@ Wire Wire Line
 $Comp
 L Device:R R1
 U 1 1 606620B5
-P 3750 3550
-F 0 "R1" V 3543 3550 50  0000 C CNN
-F 1 "500" V 3634 3550 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 3680 3550 50  0001 C CNN
-F 3 "~" H 3750 3550 50  0001 C CNN
-	1    3750 3550
-	0    1    1    0   
+P 5750 3200
+F 0 "R1" V 5543 3200 50  0000 C CNN
+F 1 "500" V 5634 3200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 5680 3200 50  0001 C CNN
+F 3 "~" H 5750 3200 50  0001 C CNN
+	1    5750 3200
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	2800 3550 3600 3550
 Wire Wire Line
 	5850 1050 5850 1150
 $Comp
@@ -248,6 +246,75 @@ Wire Wire Line
 	5850 1850 5850 2300
 Wire Wire Line
 	5850 2300 6300 2300
+$Comp
+L Mouser:SN74AHCT125N IC1
+U 1 1 60732053
+P 4300 2450
+F 0 "IC1" H 4850 2715 50  0000 C CNN
+F 1 "SN74AHCT125N" H 4850 2624 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5250 2550 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ahct125" H 5250 2450 50  0001 L CNN
+F 4 "Quadruple Bus Buffer Gates With 3-State Outputs" H 5250 2350 50  0001 L CNN "Description"
+F 5 "5.08" H 5250 2250 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 5250 2150 50  0001 L CNN "Manufacturer_Name"
+F 7 "SN74AHCT125N" H 5250 2050 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "595-SN74AHCT125N" H 5250 1950 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74AHCT125N?qs=1wQRf3HkBjyxwrHMwAiMfw%3D%3D" H 5250 1850 50  0001 L CNN "Mouser Price/Stock"
+F 10 "SN74AHCT125N" H 5250 1750 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/sn74ahct125n/texas-instruments" H 5250 1650 50  0001 L CNN "Arrow Price/Stock"
+	1    4300 2450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4300 2750
+NoConn ~ 4300 2850
+NoConn ~ 4300 2950
+NoConn ~ 5400 3050
+NoConn ~ 5400 2950
+NoConn ~ 5400 2850
 Wire Wire Line
-	3900 3550 6300 3550
+	4200 3050 4300 3050
+$Comp
+L power:GND #PWR01
+U 1 1 6073F12A
+P 4850 3300
+F 0 "#PWR01" H 4850 3050 50  0001 C CNN
+F 1 "GND" H 4855 3127 50  0000 C CNN
+F 2 "" H 4850 3300 50  0001 C CNN
+F 3 "" H 4850 3300 50  0001 C CNN
+	1    4850 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2450 5400 2300
+Wire Wire Line
+	5400 2300 5850 2300
+Connection ~ 5850 2300
+Wire Wire Line
+	5650 3550 5650 2650
+Wire Wire Line
+	5650 2650 5400 2650
+Wire Wire Line
+	2800 3550 5650 3550
+Wire Wire Line
+	5750 3350 5750 3550
+Wire Wire Line
+	5750 3550 6300 3550
+Wire Wire Line
+	4200 3050 4200 3300
+Connection ~ 4850 3300
+Wire Wire Line
+	4850 3300 4200 3300
+Wire Wire Line
+	4850 3300 5500 3300
+Wire Wire Line
+	5400 2750 5750 2750
+Wire Wire Line
+	5750 2750 5750 3050
+Wire Wire Line
+	5400 2550 5500 2550
+Wire Wire Line
+	5500 2550 5500 3300
+NoConn ~ 4300 2650
+NoConn ~ 4300 2550
+NoConn ~ 4300 2450
 $EndSCHEMATC
