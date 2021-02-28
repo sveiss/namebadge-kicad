@@ -24,14 +24,6 @@ F 3 "" H 2100 2600 50  0001 C CNN
 	1    2100 2600
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 6300 1400 1600 2250
-U 603C79C5
-F0 "letter-k" 50
-F1 "letter-k.sch" 50
-$EndSheet
-Text GLabel 4200 3550 2    50   Input ~ 0
-Neo_DIN
 Wire Wire Line
 	3250 1150 3250 1850
 Wire Wire Line
@@ -202,5 +194,60 @@ $EndComp
 Wire Wire Line
 	2800 3550 3600 3550
 Wire Wire Line
-	3900 3550 4200 3550
+	5850 1050 5850 1150
+$Comp
+L Device:C C15
+U 1 1 6068DE58
+P 6000 1850
+F 0 "C15" V 5748 1850 50  0000 C CNN
+F 1 "1000uF" V 5839 1850 50  0000 C CNN
+F 2 "Capacitor_THT:C_Radial_D12.5mm_H20.0mm_P5.00mm" H 6038 1700 50  0001 C CNN
+F 3 "~" H 6000 1850 50  0001 C CNN
+	1    6000 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 6068F796
+P 6150 1950
+F 0 "#PWR0111" H 6150 1700 50  0001 C CNN
+F 1 "GND" H 6155 1777 50  0000 C CNN
+F 2 "" H 6150 1950 50  0001 C CNN
+F 3 "" H 6150 1950 50  0001 C CNN
+	1    6150 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 1950 6150 1850
+$Comp
+L power:VCC #PWR0119
+U 1 1 6068FE64
+P 5850 1150
+F 0 "#PWR0119" H 5850 1000 50  0001 C CNN
+F 1 "VCC" H 5865 1323 50  0000 C CNN
+F 2 "" H 5850 1150 50  0001 C CNN
+F 3 "" H 5850 1150 50  0001 C CNN
+	1    5850 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 1150 5850 1850
+Connection ~ 5850 1150
+$Sheet
+S 6300 1500 1600 2250
+U 603C79C5
+F0 "letter-k" 50
+F1 "letter-k.sch" 50
+F2 "LED_PWR" I L 6300 2300 50 
+F3 "LED_DIN" I L 6300 3550 50 
+$EndSheet
+Wire Wire Line
+	5900 1850 5850 1850
+Connection ~ 5850 1850
+Wire Wire Line
+	5850 1850 5850 2300
+Wire Wire Line
+	5850 2300 6300 2300
+Wire Wire Line
+	3900 3550 6300 3550
 $EndSCHEMATC

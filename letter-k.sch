@@ -298,8 +298,6 @@ Wire Wire Line
 Wire Wire Line
 	2900 5700 2900 6100
 Wire Wire Line
-	2000 750  2000 1000
-Wire Wire Line
 	2000 5800 2500 5800
 Connection ~ 2500 5800
 Wire Wire Line
@@ -335,7 +333,6 @@ Wire Wire Line
 Wire Wire Line
 	2500 1000 2000 1000
 Connection ~ 2500 1000
-Connection ~ 2000 1000
 Wire Wire Line
 	2000 1000 2000 1800
 $Comp
@@ -452,21 +449,8 @@ Wire Wire Line
 Connection ~ 2500 6350
 Wire Wire Line
 	2500 6350 2500 6450
-$Comp
-L power:VCC #PWR0111
-U 1 1 6042349E
-P 2000 750
-F 0 "#PWR0111" H 2000 600 50  0001 C CNN
-F 1 "VCC" H 2015 923 50  0000 C CNN
-F 2 "" H 2000 750 50  0001 C CNN
-F 3 "" H 2000 750 50  0001 C CNN
-	1    2000 750 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2900 1300 2900 750 
-Text GLabel 2900 750  2    50   Input ~ 0
-Neo_DIN
 $Comp
 L LED:NeoPixel_THT D?
 U 1 1 60432DB8
@@ -544,8 +528,6 @@ F 3 "~" H 5850 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5850 2750 6000 2750
-Wire Wire Line
 	6550 3250 6550 3200
 Wire Wire Line
 	6250 2500 6250 2900
@@ -583,8 +565,6 @@ Wire Wire Line
 	5850 4850 6550 4850
 Wire Wire Line
 	6550 4850 6550 4800
-Wire Wire Line
-	6250 4100 6250 4500
 Wire Wire Line
 	6850 4500 6850 4900
 $Comp
@@ -629,8 +609,6 @@ F 3 "~" H 7200 2100 50  0001 C CNN
 	1    7200 2100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7200 1950 7350 1950
 Wire Wire Line
 	7200 2250 7200 2350
 Wire Wire Line
@@ -681,8 +659,6 @@ F 3 "~" H 7200 5300 50  0001 C CNN
 	1    7200 5300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7200 5150 7350 5150
 Wire Wire Line
 	7200 5450 7200 5550
 Wire Wire Line
@@ -736,8 +712,6 @@ F 3 "~" H 8550 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8550 1150 8700 1150
-Wire Wire Line
 	8550 1450 8550 1550
 Wire Wire Line
 	8550 1650 9250 1650
@@ -780,9 +754,7 @@ Wire Wire Line
 Wire Wire Line
 	8200 900  8950 900 
 Wire Wire Line
-	9550 1300 9550 4100
-Wire Wire Line
-	9550 4100 6250 4100
+	9550 1300 9550 3600
 Wire Wire Line
 	6850 4900 7600 4900
 Wire Wire Line
@@ -809,8 +781,6 @@ Wire Wire Line
 	8550 6450 9250 6450
 Wire Wire Line
 	8550 6250 8550 6350
-Wire Wire Line
-	8550 5950 8700 5950
 $Comp
 L Device:CP C?
 U 1 1 604A0DEA
@@ -839,124 +809,10 @@ F 3 "https://www.adafruit.com/product/1938" H 9350 5725 50  0001 L TNN
 $EndComp
 Wire Wire Line
 	8200 5700 8950 5700
-$Comp
-L power:VCC #PWR0119
-U 1 1 604E03AD
-P 4500 3400
-F 0 "#PWR0119" H 4500 3250 50  0001 C CNN
-F 1 "VCC" H 4515 3573 50  0000 C CNN
-F 2 "" H 4500 3400 50  0001 C CNN
-F 3 "" H 4500 3400 50  0001 C CNN
-	1    4500 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0120
-U 1 1 604E0C11
-P 6000 2750
-F 0 "#PWR0120" H 6000 2600 50  0001 C CNN
-F 1 "VCC" H 6015 2923 50  0000 C CNN
-F 2 "" H 6000 2750 50  0001 C CNN
-F 3 "" H 6000 2750 50  0001 C CNN
-	1    6000 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0121
-U 1 1 604E1420
-P 7350 1950
-F 0 "#PWR0121" H 7350 1800 50  0001 C CNN
-F 1 "VCC" H 7365 2123 50  0000 C CNN
-F 2 "" H 7350 1950 50  0001 C CNN
-F 3 "" H 7350 1950 50  0001 C CNN
-	1    7350 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0122
-U 1 1 604E1AE2
-P 8700 1150
-F 0 "#PWR0122" H 8700 1000 50  0001 C CNN
-F 1 "VCC" H 8715 1323 50  0000 C CNN
-F 2 "" H 8700 1150 50  0001 C CNN
-F 3 "" H 8700 1150 50  0001 C CNN
-	1    8700 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0123
-U 1 1 604E23F8
-P 5850 4200
-F 0 "#PWR0123" H 5850 4050 50  0001 C CNN
-F 1 "VCC" H 5865 4373 50  0000 C CNN
-F 2 "" H 5850 4200 50  0001 C CNN
-F 3 "" H 5850 4200 50  0001 C CNN
-	1    5850 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0124
-U 1 1 604E2AA4
-P 7350 5150
-F 0 "#PWR0124" H 7350 5000 50  0001 C CNN
-F 1 "VCC" H 7365 5323 50  0000 C CNN
-F 2 "" H 7350 5150 50  0001 C CNN
-F 3 "" H 7350 5150 50  0001 C CNN
-	1    7350 5150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0125
-U 1 1 604E31DD
-P 8700 5950
-F 0 "#PWR0125" H 8700 5800 50  0001 C CNN
-F 1 "VCC" H 8715 6123 50  0000 C CNN
-F 2 "" H 8700 5950 50  0001 C CNN
-F 3 "" H 8700 5950 50  0001 C CNN
-	1    8700 5950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5200 3400 4500 3400
-Connection ~ 4500 3400
 Wire Wire Line
 	6550 4200 5850 4200
-Connection ~ 5850 4200
-Wire Wire Line
-	7900 5000 7500 5000
-Wire Wire Line
-	7500 5000 7500 5150
-Wire Wire Line
-	7500 5150 7350 5150
-Connection ~ 7350 5150
-Wire Wire Line
-	9250 5800 8850 5800
-Wire Wire Line
-	8850 5800 8850 5950
-Wire Wire Line
-	8850 5950 8700 5950
-Connection ~ 8700 5950
-Wire Wire Line
-	9250 1000 8850 1000
-Wire Wire Line
-	8850 1000 8850 1150
-Wire Wire Line
-	8850 1150 8700 1150
-Connection ~ 8700 1150
-Wire Wire Line
-	7900 1800 7500 1800
-Wire Wire Line
-	7500 1800 7500 1950
-Wire Wire Line
-	7500 1950 7350 1950
-Connection ~ 7350 1950
-Wire Wire Line
-	6550 2600 6150 2600
-Wire Wire Line
-	6150 2600 6150 2750
-Wire Wire Line
-	6150 2750 6000 2750
-Connection ~ 6000 2750
 Wire Wire Line
 	3200 4050 2500 4050
 Wire Wire Line
@@ -980,4 +836,70 @@ Wire Wire Line
 	5850 3150 5850 3050
 Connection ~ 5850 3150
 NoConn ~ 9550 6100
+Wire Wire Line
+	2000 1000 2000 750 
+Connection ~ 2000 1000
+Text HLabel 2000 750  2    50   Input ~ 0
+LED_PWR
+Wire Wire Line
+	4500 3400 4500 3250
+Connection ~ 4500 3400
+Text HLabel 4500 3250 2    50   Input ~ 0
+LED_PWR
+Wire Wire Line
+	6550 2600 6550 2400
+Connection ~ 6550 2600
+Wire Wire Line
+	7900 1800 7900 1600
+Connection ~ 7900 1800
+Wire Wire Line
+	7200 1800 7200 1950
+Wire Wire Line
+	7200 1800 7900 1800
+Wire Wire Line
+	5850 2600 5850 2750
+Wire Wire Line
+	5850 2600 6550 2600
+Text HLabel 6550 2400 0    50   Input ~ 0
+LED_PWR
+Text HLabel 7900 1600 0    50   Input ~ 0
+LED_PWR
+Wire Wire Line
+	9250 1000 9250 750 
+Connection ~ 9250 1000
+Wire Wire Line
+	8550 1000 8550 1150
+Wire Wire Line
+	8550 1000 9250 1000
+Text HLabel 9250 750  0    50   Input ~ 0
+LED_PWR
+Wire Wire Line
+	6250 3600 9550 3600
+Wire Wire Line
+	6250 3600 6250 4500
+Wire Wire Line
+	6550 4200 6550 4050
+Connection ~ 6550 4200
+Wire Wire Line
+	7900 5000 7900 4750
+Connection ~ 7900 5000
+Wire Wire Line
+	9250 5800 9250 5600
+Connection ~ 9250 5800
+Text HLabel 6550 4050 2    50   Input ~ 0
+LED_PWR
+Text HLabel 7900 4750 0    50   Input ~ 0
+LED_PWR
+Text HLabel 9250 5600 0    50   Input ~ 0
+LED_PWR
+Wire Wire Line
+	8550 5800 8550 5950
+Wire Wire Line
+	8550 5800 9250 5800
+Wire Wire Line
+	7200 5150 7200 5000
+Wire Wire Line
+	7200 5000 7900 5000
+Text HLabel 2900 750  2    50   Input ~ 0
+LED_DIN
 $EndSCHEMATC
