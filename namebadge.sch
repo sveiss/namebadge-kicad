@@ -192,7 +192,7 @@ Wire Wire Line
 Wire Wire Line
 	5850 2300 6300 2300
 $Comp
-L Mouser:SN74AHCT125N IC1
+L SamacSys_Parts:SN74AHCT125N IC1
 U 1 1 60732053
 P 4300 2450
 F 0 "IC1" H 4850 2715 50  0000 C CNN
@@ -237,7 +237,6 @@ Wire Wire Line
 	5400 2550 5550 2550
 NoConn ~ 4300 2650
 NoConn ~ 4300 2550
-NoConn ~ 4300 2450
 $Comp
 L Connector:Barrel_Jack J1
 U 1 1 6074B59D
@@ -405,4 +404,8 @@ Wire Wire Line
 	4850 3300 5550 3300
 Wire Wire Line
 	4850 3300 4850 3450
+Wire Wire Line
+	4200 2450 4300 2450
+Wire Wire Line
+	4200 3050 4200 2450
 $EndSCHEMATC
