@@ -192,31 +192,6 @@ Wire Wire Line
 Wire Wire Line
 	5850 2300 6300 2300
 $Comp
-L SamacSys_Parts:SN74AHCT125N IC1
-U 1 1 60732053
-P 4300 2450
-F 0 "IC1" H 4850 2715 50  0000 C CNN
-F 1 "SN74AHCT125N" H 4850 2624 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 5250 2550 50  0001 L CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ahct125" H 5250 2450 50  0001 L CNN
-F 4 "Quadruple Bus Buffer Gates With 3-State Outputs" H 5250 2350 50  0001 L CNN "Description"
-F 5 "5.08" H 5250 2250 50  0001 L CNN "Height"
-F 6 "Texas Instruments" H 5250 2150 50  0001 L CNN "Manufacturer_Name"
-F 7 "SN74AHCT125N" H 5250 2050 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "595-SN74AHCT125N" H 5250 1950 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74AHCT125N?qs=1wQRf3HkBjyxwrHMwAiMfw%3D%3D" H 5250 1850 50  0001 L CNN "Mouser Price/Stock"
-F 10 "SN74AHCT125N" H 5250 1750 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/sn74ahct125n/texas-instruments" H 5250 1650 50  0001 L CNN "Arrow Price/Stock"
-	1    4300 2450
-	1    0    0    -1  
-$EndComp
-NoConn ~ 4300 2750
-NoConn ~ 4300 2850
-NoConn ~ 4300 2950
-NoConn ~ 5400 3050
-NoConn ~ 5400 2950
-NoConn ~ 5400 2850
-$Comp
 L power:GND #PWR01
 U 1 1 6073F12A
 P 4850 3450
@@ -235,8 +210,6 @@ Wire Wire Line
 	5400 2750 5700 2750
 Wire Wire Line
 	5400 2550 5550 2550
-NoConn ~ 4300 2650
-NoConn ~ 4300 2550
 $Comp
 L Connector:Barrel_Jack J1
 U 1 1 6074B59D
@@ -293,26 +266,26 @@ U 1 1 60764BC0
 P 4000 3050
 F 0 "C16" V 4225 3050 50  0000 C CNN
 F 1 "0.1uF" V 4134 3050 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 4000 3050 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 4000 3050 50  0001 C CNN
 F 3 "~" H 4000 3050 50  0001 C CNN
 	1    4000 3050
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4300 3050 4200 3050
+	4300 3050 4250 3050
 Wire Wire Line
-	4200 3050 4200 3300
-Connection ~ 4200 3050
+	4250 3050 4250 3300
+Connection ~ 4250 3050
 Wire Wire Line
-	4200 3050 4100 3050
+	4250 3050 4150 3050
 Wire Wire Line
 	3850 3050 3850 2050
 Wire Wire Line
-	3850 2050 4800 2050
+	3850 2050 4050 2050
 Wire Wire Line
 	5400 2050 5400 2450
 Wire Wire Line
-	5550 2550 5550 3300
+	5550 2550 5550 2950
 Wire Wire Line
 	3850 3050 3900 3050
 Wire Wire Line
@@ -369,10 +342,10 @@ Wire Wire Line
 	1200 1250 5700 1250
 Connection ~ 1050 3350
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0102
 U 1 1 607F0923
 P 3250 3600
-F 0 "#PWR?" H 3250 3350 50  0001 C CNN
+F 0 "#PWR0102" H 3250 3350 50  0001 C CNN
 F 1 "GND" H 3255 3427 50  0000 C CNN
 F 2 "" H 3250 3600 50  0001 C CNN
 F 3 "" H 3250 3600 50  0001 C CNN
@@ -387,10 +360,10 @@ Wire Wire Line
 Wire Wire Line
 	2950 1650 2800 1650
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0121
 U 1 1 607F7552
 P 4800 900
-F 0 "#PWR?" H 4800 750 50  0001 C CNN
+F 0 "#PWR0121" H 4800 750 50  0001 C CNN
 F 1 "VCC" H 4815 1073 50  0000 C CNN
 F 2 "" H 4800 900 50  0001 C CNN
 F 3 "" H 4800 900 50  0001 C CNN
@@ -398,14 +371,80 @@ F 3 "" H 4800 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4200 3300 4850 3300
+	4250 3300 4850 3300
 Connection ~ 4850 3300
 Wire Wire Line
 	4850 3300 5550 3300
 Wire Wire Line
 	4850 3300 4850 3450
+$Comp
+L SamacSys_Parts:SN74AHCT125N IC1
+U 1 1 60732053
+P 4300 2450
+F 0 "IC1" H 4850 2715 50  0000 C CNN
+F 1 "SN74AHCT125N" H 4850 2624 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5250 2550 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ahct125" H 5250 2450 50  0001 L CNN
+F 4 "Quadruple Bus Buffer Gates With 3-State Outputs" H 5250 2350 50  0001 L CNN "Description"
+F 5 "5.08" H 5250 2250 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 5250 2150 50  0001 L CNN "Manufacturer_Name"
+F 7 "SN74AHCT125N" H 5250 2050 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "595-SN74AHCT125N" H 5250 1950 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74AHCT125N?qs=1wQRf3HkBjyxwrHMwAiMfw%3D%3D" H 5250 1850 50  0001 L CNN "Mouser Price/Stock"
+F 10 "SN74AHCT125N" H 5250 1750 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/sn74ahct125n/texas-instruments" H 5250 1650 50  0001 L CNN "Arrow Price/Stock"
+	1    4300 2450
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	4200 2450 4300 2450
+	4300 2750 4050 2750
 Wire Wire Line
-	4200 3050 4200 2450
+	4050 2750 4050 2450
+Connection ~ 4050 2050
+Wire Wire Line
+	4050 2050 4800 2050
+Wire Wire Line
+	4050 2450 4300 2450
+Connection ~ 4050 2450
+Wire Wire Line
+	4050 2450 4050 2050
+Wire Wire Line
+	4300 2550 4150 2550
+Wire Wire Line
+	4150 2550 4150 2650
+Connection ~ 4150 3050
+Wire Wire Line
+	4150 3050 4100 3050
+Wire Wire Line
+	4300 2650 4150 2650
+Connection ~ 4150 2650
+Wire Wire Line
+	4150 2650 4150 2850
+Wire Wire Line
+	4300 2950 4150 2950
+Connection ~ 4150 2950
+Wire Wire Line
+	4150 2950 4150 3050
+Wire Wire Line
+	4300 2850 4150 2850
+Connection ~ 4150 2850
+Wire Wire Line
+	4150 2850 4150 2950
+Wire Wire Line
+	5400 2850 5450 2850
+Wire Wire Line
+	5450 2850 5450 2450
+Wire Wire Line
+	5450 2450 5400 2450
+Connection ~ 5400 2450
+Wire Wire Line
+	5400 2950 5550 2950
+Connection ~ 5550 2950
+Wire Wire Line
+	5550 2950 5550 3050
+Wire Wire Line
+	5400 3050 5550 3050
+Connection ~ 5550 3050
+Wire Wire Line
+	5550 3050 5550 3300
 $EndSCHEMATC
