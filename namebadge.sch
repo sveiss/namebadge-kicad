@@ -213,25 +213,18 @@ Wire Wire Line
 $Comp
 L Connector:Barrel_Jack J1
 U 1 1 6074B59D
-P 2050 7200
-F 0 "J1" H 1820 7158 50  0000 R CNN
-F 1 "Barrel_Jack" H 1820 7249 50  0000 R CNN
-F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal" H 2100 7160 50  0001 C CNN
-F 3 "~" H 2100 7160 50  0001 C CNN
-	1    2050 7200
+P 3050 7200
+F 0 "J1" H 2820 7158 50  0000 R CNN
+F 1 "Barrel_Jack" H 2820 7249 50  0000 R CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal" H 3100 7160 50  0001 C CNN
+F 3 "~" H 3100 7160 50  0001 C CNN
+	1    3050 7200
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	1450 7000 1450 7100
 Wire Wire Line
-	1000 7000 1000 7300
-Wire Wire Line
-	1750 7300 1000 7300
-Connection ~ 1000 7300
-Wire Wire Line
-	1000 7300 1000 7400
-Wire Wire Line
-	1750 7100 1450 7100
+	2750 7100 1450 7100
 Connection ~ 1450 7100
 Wire Wire Line
 	1450 7100 1450 7400
@@ -315,7 +308,6 @@ Wire Wire Line
 	1700 4250 1850 4250
 Wire Wire Line
 	1850 4250 1850 4300
-NoConn ~ 2800 1750
 Wire Wire Line
 	4800 900  4800 2050
 Connection ~ 4800 2050
@@ -355,10 +347,6 @@ $EndComp
 Wire Wire Line
 	3250 3600 3250 3350
 Connection ~ 3250 3350
-Wire Wire Line
-	2950 900  2950 1650
-Wire Wire Line
-	2950 1650 2800 1650
 $Comp
 L power:VCC #PWR0121
 U 1 1 607F7552
@@ -447,4 +435,37 @@ Wire Wire Line
 Connection ~ 5550 3050
 Wire Wire Line
 	5550 3050 5550 3300
+Wire Wire Line
+	2950 1750 2800 1750
+Wire Wire Line
+	2950 900  2950 1750
+NoConn ~ 2800 1650
+Wire Wire Line
+	1000 7000 1000 7300
+$Comp
+L Device:D_Schottky D15
+U 1 1 6055D58C
+P 2100 7400
+F 0 "D15" H 2100 7617 50  0000 C CNN
+F 1 "D_Schottky" H 2100 7526 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2100 7400 50  0001 C CNN
+F 3 "~" H 2100 7400 50  0001 C CNN
+	1    2100 7400
+	1    0    0    -1  
+$EndComp
+Connection ~ 1000 7300
+Wire Wire Line
+	1000 7300 1000 7400
+Wire Wire Line
+	1000 7300 1700 7300
+Wire Wire Line
+	1700 7300 1700 7400
+Wire Wire Line
+	1700 7400 1950 7400
+Wire Wire Line
+	2250 7400 2450 7400
+Wire Wire Line
+	2450 7400 2450 7300
+Wire Wire Line
+	2450 7300 2750 7300
 $EndSCHEMATC
